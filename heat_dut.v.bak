@@ -22,7 +22,20 @@ parameter [1:0] S2 = 2'b10;
 
 reg [1:0] state, next_state;
 
-always
+always @(posedge rst)
+begin
+    if(rst) begin
+        state <= S0;
+    end
+    else 
+    begin
+        state <= next_state;
+    end
+
+end
+
+
+always @(posedge rst)
 begin
     if(rst) begin
         state <= S0;

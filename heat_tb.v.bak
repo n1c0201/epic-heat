@@ -4,8 +4,8 @@ module heat_tb();
 
 reg rst;
 
-reg A;
-reg B;
+wire A;
+wire B;
 
 
 
