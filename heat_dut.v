@@ -19,11 +19,11 @@ output LR;
 reg LG;
 reg LR;
 
-//real I1;
-//real I2;
-//real ambientRate;
-//real conditionRate;
-//real threshold; 
+real I1;
+real I2;
+real ambientRate;
+real conditionRate;
+real threshold; 
 
 parameter [1:0] S0 = 2'b00;
 parameter [1:0] S1 = 2'b01;
@@ -33,6 +33,7 @@ reg [1:0] state, next_state;
 
 always @(posedge clock)
 begin
+    I2 = I2 - 1.5;
     if(rst) begin
         state <= S0;
     end
@@ -42,6 +43,7 @@ begin
     end
 
 end
+
 //S0 = IDLE | S1 = HEATING | S2 = COOLING
 always @(A or B or state)
 begin
