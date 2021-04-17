@@ -32,6 +32,7 @@ Instructions:
 
 
 Notes:
+
 -The difference between the cooling and the heating testbench are the I1(target temperature), I2(current room temperature), ambientRate(the cooling/heating of the room naturally have).
 -For the ambient rate in cooling_tb, we set it to + value since the room is naturally hot. 
 -For the ambient rate in heating_tb, we set it to - value since the room is naturally cold 
