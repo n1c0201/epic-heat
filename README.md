@@ -1,8 +1,9 @@
+![air conditioner](https://user-images.githubusercontent.com/56817655/115108349-32250900-9f9a-11eb-93d3-794afd30ad1d.jpg)
 # Epic-Heat
 An epic heating system for Computer Architecture and Operating Systems mid project
 
 <p align="center">
-  <img width="300" height="300" src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com.au%2Fpin%2F303922674851583531%2F&psig=AOvVaw0BrfYl4EOxUnsX5hDCBtzm&ust=1618738076534000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiI-7T7hPACFQAAAAAdAAAAABAO">
+  <img width="300" height="300" src="air conditioner">
 </p>
 
 
