@@ -20,7 +20,6 @@ https://fpgasoftware.intel.com/
 Clone repository 
 ```bash
 git clone https://github.com/n1c0201/epic-heat.git
-cd Web-Stack
 ```
 
 Instructions:
