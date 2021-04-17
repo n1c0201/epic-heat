@@ -32,7 +32,7 @@ Instructions:
 
 Instructions:
 
-- step 1 : Open ModelSim 
+- The difference between the cooling and the heating testbench are the I1(target temperature), I2(current room temperature), ambientRate(the cooling/heating of the room naturally have)
 - Step 2 : Create new project
 - Step 3 : Add existing file, the verilog files that has been cloned (cooling_tb.v, hear_dut.v, heating_tb.v)
 - step 4 : compile all
