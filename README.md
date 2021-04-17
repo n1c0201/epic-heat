@@ -1,4 +1,4 @@
-# epic-heat
+# Epic-Heat
 An epic heating system for Computer Architecture and Operating Systems mid project
 
 Description:
