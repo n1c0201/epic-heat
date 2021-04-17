@@ -20,9 +20,9 @@ cd Web-Stack
 
 Instructions:
 
-step 1 : Open ModelSim 
-Step 2 : Create new project
-Step 3 : Add existing file, the verilog files that has been cloned (cooling_tb.v, hear_dut.v, heating_tb.v)
+- step 1 : Open ModelSim 
+- Step 2 : Create new project
+- Step 3 : Add existing file, the verilog files that has been cloned (cooling_tb.v, hear_dut.v, heating_tb.v)
 step 4 : compile all
 step 5 : Start simulation 
 step 6 : open the work directory, choose one of the testbench you want (cooling_tb or heating_tb)
