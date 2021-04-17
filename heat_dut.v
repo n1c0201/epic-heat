@@ -4,7 +4,8 @@ module heating_dut(
     LR,
     rst,
     A,
-    B
+    B,
+    status
 );
 
 
@@ -12,6 +13,7 @@ input rst;
 input clock;
 input A;
 input B;
+input status;
 
 output LG;
 output LR;
