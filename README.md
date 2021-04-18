@@ -28,14 +28,15 @@ git clone https://github.com/n1c0201/epic-heat.git
 
 Instructions:
 
-- Step 1 : Open ModelSim 
-- Step 2 : File > New > Project..
-- Step 3 : Add existing file > Add all the Verilog files that has been cloned (cooling_tb.v, heat_dut.v, heating_tb.v)
-- step 4 : Compile > Compile All
-- step 5 : Simulation > Start simulation...
-- step 6 : Open the 'work' directory and choose one of the test benches (cool_tb or heat_tb)
-- step 7 : On the right select all in the new 'Objects' tab > Right click > Add wave
-- step 8 : Click 'run' (in top bar, with paper and arrow going down icon) to incrementally see the result and enjoy.
+- Step 1 : Open ModelSim
+- Step 2 : Go to File > New > Project... on the top-left of the window
+- Step 3 : Type the Project title, specify the Project Location, and click OK
+- Step 4 : Click Add existing file > Add all the Verilog files that has been cloned (cooling_tb.v, heat_dut.v, heating_tb.v) and click Close
+- Step 5 : Go to Compile > Compile All on the top-left of the window
+- Step 6 : Go to Simulate > Start simulation... on the top-left of the window
+- Step 7 : Open the 'work' directory, choose one of the test benches (cool_tb or heat_tb), and click OK
+- Step 8 : Right click anywhere on the white blank field > Add Wave
+- Step 9 : Click 'Run' repeatedly (in top bar, with paper and arrow going down icon) to incrementally see the result and enjoy.
 
 Current ambient room temperature will be shown in `/*/I2` wave, and target temperature shown in `/*/I1` . If`/*/B` is HIGH, then the system is working; LOW means that the system is idling.
 
