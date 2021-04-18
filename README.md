@@ -1,15 +1,16 @@
 # Epic-Heat
 An epic heating system for Computer Architecture and Operating Systems mid exam project
 
+Link to the report: [Link](https://www.overleaf.com/read/spkjdjjtztmz)
+
 <p align="center">
    <img width="300" height="300" src="https://user-images.githubusercontent.com/56817655/115108349-32250900-9f9a-11eb-93d3-794afd30ad1d.jpg">
 </p>
 <p align="center"><strong>The epic heat man</strong></p>
 
-
 ### Description:
 
-A verilog project that simulates a finite state machine for air conditioner. It will output commands to heat/cool the room until the designated ambient temperature. After reaching the target temperature, it will idle until a certain threshold and start heating/cooling again until the designated temperature. Vice versa for cooling 
+A Verilog project that simulates a finite state machine for air conditioner. It will output commands to heat/cool the room until the designated ambient temperature. After reaching the target temperature, it will idle until a certain threshold and start heating/cooling again until the designated temperature. Vice versa for cooling.
 
 
 
@@ -38,7 +39,7 @@ Instructions:
 - Step 8 : Right click anywhere on the white blank field > Add Wave
 - Step 9 : Click 'Run' repeatedly (in top bar, with paper and arrow going down icon) to incrementally see the result and enjoy.
 
-Current ambient room temperature will be shown in `/*/I2` wave, and target temperature shown in `/*/I1` . If`/*/B` is HIGH, then the system is working; LOW means that the system is idling.
+Current ambient room temperature will be shown in `/*/I2` wave, and target temperature shown in `/*/I1` . If`/*/LG` is HIGH, then the system is cooling; `/*/LR` HIGH means that the system is heating.
 
 
 Notes:
