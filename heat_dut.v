@@ -9,33 +9,33 @@ module heating_dut(
 );
 
 
-input rst;
-input clock;
-input A;
-input B;
-input status;
+input rst; //an input to reset the machine when value is 1 or reset signal (active high)
+input clock; //an input on the rising edge of the clock or clock signal (active high) 
+input A; //an input to determine the state of the machine
+input B; //an input to determine the state of the machine
+input status; //an input to determine the sign of conditionRate according to the ambientRate
 
-output LG;
-output LR;
+output LG; //green colored LED to show when the machine is cooling the room
+output LR; //red colored LED to show when the machine is heating the room
 
-reg LG;
-reg LR;
+reg LG; //procedural assignment on green colored LED to show when the machine is cooling the room
+reg LR; //procedural assignment on red colored led to show when the machine is heating the room
 
-real I1;
-real I2;
-real ambientRate;
-real conditionRate;
-real threshold; 
+real I1; //target temperature
+real I2; //ambient temperature
+real ambientRate; //rate at which the room cool down or heats up
+real conditionRate; // rate at which the machine cools down the room or heats up the room
+real threshold; // threshold between the target temperature and the temperature when the machine goes idle
 
 parameter [1:0] S0 = 2'b00;
 parameter [1:0] S1 = 2'b01;
 parameter [1:0] S2 = 2'b10;
 
-reg [1:0] state, next_state;
+reg [1:0] state, next_state; //pointers to see the current state and the next state
 
 always @(posedge clock)
+//Initializing the state 
 begin
-    I2 = I2 - 1.5;
     if(rst) begin
         state <= S0;
     end
@@ -47,6 +47,7 @@ begin
 end
 
 //S0 = IDLE | S1 = HEATING | S2 = COOLING
+//changing states when the value of A or B changes
 always @(A or B or state)
 begin
     case(state)
@@ -78,7 +79,8 @@ begin
     endcase
     
 end
-
+//Cases for each of the states, light up an LED to show status
+//LR = Heating | LG = Cooling
 always @(state)
 begin
     case(state)
