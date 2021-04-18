@@ -2,10 +2,9 @@
 An epic heating system for Computer Architecture and Operating Systems mid exam project
 
 <p align="center">
-   <img style="border-radius: 100px;" width="300" height="300" src="https://user-images.githubusercontent.com/56817655/115108349-32250900-9f9a-11eb-93d3-794afd30ad1d.jpg">
-    <div style="text-align: center;"><b>The epic heat man</b></div>
+   <img width="300" height="300" src="https://user-images.githubusercontent.com/56817655/115108349-32250900-9f9a-11eb-93d3-794afd30ad1d.jpg">
 </p>
-
+<p align="center"><strong>The epic heat man</strong></p>
 
 
 ### Description:
