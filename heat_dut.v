@@ -47,6 +47,7 @@ begin
 end
 
 //S0 = IDLE | S1 = HEATING | S2 = COOLING
+//changing states when the value of A or B changes
 always @(A or B or state)
 begin
     case(state)
@@ -78,7 +79,8 @@ begin
     endcase
     
 end
-
+//Cases for each of the states, light up an LED to show status
+//LR = Heating | LG = Cooling
 always @(state)
 begin
     case(state)

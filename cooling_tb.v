@@ -17,8 +17,9 @@ real I1; //target temperature
 real I2; //ambient temperature
 real ambientRate; //rate at which the room cool down or heats up
 real conditionRate; // rate at which the machine cools down the room or heats up the room
-real threshold; 
+real threshold; // threshold between the target temperature and the temperature when the machine goes idle
 
+//initialising all values at the start of the simulation
 initial begin
     rst = 1;
     A = 0;
@@ -28,6 +29,7 @@ initial begin
     I2 = 26.0;
     ambientRate = 0.1;
     conditionRate = 0.5;
+    //changing status according to the ambient temperature
     if (ambientRate > 0) begin
         conditionRate = -conditionRate;
         status = 1;
@@ -41,6 +43,7 @@ initial begin
 
     
 end
+//Changing the values of A or B according to the status and the current temperature
 always
     #100
     if(status == 1'b0) begin
@@ -64,6 +67,7 @@ always
             B = 0;
         end
     end
+//Calculations during each of the states
 always
     #100
     if(A == 1'b1) begin
