@@ -9,14 +9,14 @@ module heating_dut(
 );
 
 
-input rst;
-input clock;
-input A;
-input B;
-input status;
+input rst; //an input to reset the machine when value is 1
+input clock; //
+input A; //an input to determine the state of the machine
+input B; //an input to determine the state of the machine
+input status; //an input to determine the sign of conditionRate according to the ambientRate
 
-output LG;
-output LR;
+output LG; //green colored LED to show when the machine is cooling the room
+output LR; //red colored LED to show when the machine is heating the room
 
 reg LG;
 reg LR;
@@ -35,7 +35,6 @@ reg [1:0] state, next_state;
 
 always @(posedge clock)
 begin
-    I2 = I2 - 1.5;
     if(rst) begin
         state <= S0;
     end
