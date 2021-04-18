@@ -1,6 +1,6 @@
 `include "heat_dut.v"
 
-module heat_tb();
+module cool_tb();
 
 reg rst;
 reg clock;
