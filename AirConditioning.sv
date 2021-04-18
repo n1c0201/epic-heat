@@ -4,7 +4,8 @@ input logic reset,
 input real I1,
 input real I2,
 output logic heat,
-output logic cool
+output logic cool,
+output logic idle
 );
 
 
@@ -12,7 +13,7 @@ output logic cool
 
 
 typedef enum logic [1:0] {Idle,A,B} State;
-
+real threshold = 2.0 ;
 State currentState, nextState;
 
 always_ff @(posedge clk)
@@ -23,8 +24,8 @@ always_ff @(posedge clk)
 always_comb
 
 	case(currentState)
-		Idle: 	if(I1 >I2) nextState = A;
-			else if (I1 < I2) nextState = B;
+		Idle: 	if(I1 >= I2+threshold) nextState = A;
+			else if (I1 <= I2 -threshold) nextState = B;
 			else nextState = Idle;
 
 		A: if(I1 > I2) nextState = A;
@@ -43,5 +44,6 @@ always_comb
 
 	assign heat = (currentState == A);
 	assign cool = (currentState == B);
+	assign idle = (currentState == Idle);
 
 endmodule
