@@ -2,6 +2,7 @@
 An epic heating system for Computer Architecture and Operating Systems mid exam project
 
 Link to the report: [Link](https://www.overleaf.com/read/spkjdjjtztmz)
+Link to the video: [Link](https://youtu.be/LQ73OBZzb9g)
 
 <p align="center">
    <img width="300" height="300" src="https://user-images.githubusercontent.com/56817655/115108349-32250900-9f9a-11eb-93d3-794afd30ad1d.jpg">
