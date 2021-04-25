@@ -27,9 +27,9 @@ real ambientRate; //rate at which the room cool down or heats up
 real conditionRate; // rate at which the machine cools down the room or heats up the room
 real threshold; // threshold between the target temperature and the temperature when the machine goes idle
 
-parameter [1:0] S0 = 2'b00;
-parameter [1:0] S1 = 2'b01;
-parameter [1:0] S2 = 2'b10;
+parameter [1:0] S0 = 2'b00; // Idle
+parameter [1:0] S1 = 2'b01; // Heat
+parameter [1:0] S2 = 2'b10; // Cool
 
 reg [1:0] state, next_state; //pointers to see the current state and the next state
 

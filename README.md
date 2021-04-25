@@ -39,7 +39,7 @@ Instructions:
 - Step 8 : Right click anywhere on the white blank field > Add Wave
 - Step 9 : Click 'Run' repeatedly (in top bar, with paper and arrow going down icon) to incrementally see the result and enjoy.
 
-Current ambient room temperature will be shown in `/*/I2` wave, and target temperature shown in `/*/I1` . If`/*/LG` is HIGH, then the system is cooling; `/*/LR` HIGH means that the system is heating.
+Current ambient room temperature will be shown in `/*/I2` wave, and target temperature shown in `/*/I1` . If`/*/LR` is HIGH, then the system is heatinging; `/*/LG` HIGH means that the system is cooling.
 
 
 Notes:
