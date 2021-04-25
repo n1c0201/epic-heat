@@ -1,4 +1,4 @@
-module heating_dut(
+module airconditioning_dut(
     clock,
     LG,
     LR,

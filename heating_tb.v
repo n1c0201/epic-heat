@@ -1,4 +1,4 @@
-`include "heat_dut.v"
+`include "airconditioning_dut.v"
 
 module heat_tb();
 
