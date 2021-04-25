@@ -1,4 +1,3 @@
-
 `timescale 1ns/1ns
 
 module Heating_TB;
@@ -15,11 +14,6 @@ real threshold;
 logic heat;
 logic cool;
 logic idle;
-
-
-
-
-
 
 
 AirConditioning dut(
@@ -48,7 +42,6 @@ initial
 
 	end
 
-
 always
 begin
 
@@ -64,39 +57,20 @@ begin
 
 	I2 = I2 + ambientRate;
 
-	
-
 	end
-
-
-
-
 
 #100;
 
-
 clk <=1; #5;
 clk <=0; #5;
-
 
 end
 
 //else begin
 //I2  = I2 -ambientRate;
 //end
-
-
-
 //else begin
 //I2 =I2 +ambientRate
 //end
 
-
-
-
-
-
-
-
 endmodule
-

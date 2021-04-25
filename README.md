@@ -2,6 +2,7 @@
 An epic heating system for Computer Architecture and Operating Systems mid exam project
 
 Link to the report: [Link](https://www.overleaf.com/read/spkjdjjtztmz)
+Link to the video: [Link](https://youtu.be/LQ73OBZzb9g)
 
 <p align="center">
    <img width="300" height="300" src="https://user-images.githubusercontent.com/56817655/115108349-32250900-9f9a-11eb-93d3-794afd30ad1d.jpg">
@@ -39,7 +40,7 @@ Instructions:
 - Step 8 : Right click anywhere on the white blank field > Add Wave
 - Step 9 : Click 'Run' repeatedly (in top bar, with paper and arrow going down icon) to incrementally see the result and enjoy.
 
-Current ambient room temperature will be shown in `/*/I2` wave, and target temperature shown in `/*/I1` . If`/*/LG` is HIGH, then the system is cooling; `/*/LR` HIGH means that the system is heating.
+Current ambient room temperature will be shown in `/*/I2` wave, and target temperature shown in `/*/I1` . If`/*/heat` is HIGH, then the system is heating; `/*/cool` HIGH means that the system is cooling.
 
 
 Notes:

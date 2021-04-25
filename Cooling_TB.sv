@@ -16,11 +16,6 @@ logic cool;
 logic idle;
 
 
-
-
-
-
-
 AirConditioning dut(
 .clk(clk),
 .reset(reset),
@@ -67,16 +62,11 @@ begin
 
 	end
 
-
-
-
-
 #100;
 
 
 clk <=1; #5;
 clk <=0; #5;
-
 
 end
 
@@ -90,13 +80,4 @@ end
 //I2 =I2 +ambientRate
 //end
 
-
-
-
-
-
-
-
 endmodule
-
-

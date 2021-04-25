@@ -8,10 +8,6 @@ output logic cool,
 output logic idle
 );
 
-
-
-
-
 typedef enum logic [1:0] {Idle,A,B} State;
 real threshold = 2.0 ;
 State currentState, nextState;
@@ -19,7 +15,6 @@ State currentState, nextState;
 always_ff @(posedge clk)
 	if (reset) currentState <= Idle;
 	else currentState <= nextState;
-
 
 always_comb
 
@@ -36,8 +31,6 @@ always_comb
 
 
 		default: nextState = Idle;
-
-
 
 	endcase
 
